@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/red_btn_bg_pressed_color"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_cls"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person"
+                android:layout_margin="15dp"
+                />
+
+          <RelativeLayout
+              android:id="@+id/views"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/img_cls"
+              android:layout_margin="5dp">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/usermbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:hint="mobile"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+
+              <TextView
+                  android:id="@+id/userdate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:textStyle="normal"
+                  android:textSize="16sp"
+                  android:layout_toRightOf="@+id/usermbl"
+                  android:layout_alignParentEnd="true"
+                  android:gravity="right"
+                  android:layout_margin="20dp"/>
+
+          </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

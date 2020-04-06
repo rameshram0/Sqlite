@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ForgetScreen"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/fragment_round">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/npwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new password"
+            android:gravity="center"
+            android:background="@drawable/round"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/enpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="re-enter password"
+            android:layout_below="@+id/npwd"
+            android:gravity="center"
+            android:background="@drawable/round"
+            android:layout_margin="10dp"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_below="@id/enpwd"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
